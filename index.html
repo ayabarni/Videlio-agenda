@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,172 @@
     <title>Videlio-agenda</title>
 
 </head>
+
 <body>
+   
+    <main id="main-content">
+        <!-- eerste section -->
+        <section class="hero">
+            <h1>Workshops</h1>
+            <p>Leer, ervaar en ontmoet anderen binnen de Videlio community. Onze workshops draaien om verbinding,
+                toegankelijkheid en persoonlijke ontwikkeling.
+            </p>
+        </section>
+        <!-- tweede section -->
+        <section class="calendar" aria-labelledby="calendar-title">
+            <div class="calendar-header">
+                <button type="button" class="month-button" aria-label="Vorige maand">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="1em"
+                        height="1em" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none" />
+                        <path fill="currentColor"
+                            d="M12.727 3.687a1 1 0 1 0-1.454-1.374l-8.5 9a1 1 0 0 0 0 1.374l8.5 9.001a1 1 0 1 0 1.454-1.373L4.875 12z" />
+                    </svg>
+                </button>
+
+                <h2 id="calendar-title">Juli 2026</h2>
+
+                <button type="button" class="month-button month-button-next" aria-label="Volgende maand">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="1em"
+                        height="1em" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none" />
+                        <path fill="currentColor"
+                            d="M12.727 3.687a1 1 0 1 0-1.454-1.374l-8.5 9a1 1 0 0 0 0 1.374l8.5 9.001a1 1 0 1 0 1.454-1.373L4.875 12z" />
+                    </svg>
+                </button>
+
+            </div>
+            <p id="calendar-status" aria-live="polite">Kies een datum in de kalender om de workshopdetails te bekijken.
+            </p>
+            <p class="calendar-help">
+                De rode dagen hebben een workshop. Kies een datum om de details te bekijken.
+            </p>
+            <ol class="calendar-grid">
+                <li class="calendar-weekday">Ma</li>
+                <li class="calendar-weekday">Di</li>
+                <li class="calendar-weekday">Wo</li>
+                <li class="calendar-weekday">Do</li>
+                <li class="calendar-weekday">Vr</li>
+                <li class="calendar-weekday">Za</li>
+                <li class="calendar-weekday">Zo</li>
+
+                <li class="calendar-empty" aria-hidden="true"></li>
+                <li class="calendar-empty" aria-hidden="true"></li>
+
+
+                <li><span>1</span></li>
+                <li><span>2</span></li>
+                <li><span>3</span></li>
+                <li><span>4</span></li>
+                <li><span>5</span></li>
+                <li><span>6</span></li>
+                <li><span>7</span></li>
+                <li><span>8</span></li>
+                <li><span>9</span></li>
+                <li><span>10</span></li>
+                <li><span>11</span></li>
+                <li><span>12</span></li>
+                <li><span>13</span></li>
+                <li><span>14</span></li>
+                <li><span>15</span></li>
+                <li><span>16</span></li>
+                <li><span>17</span></li>
+
+
+                <li>
+                    <button type="button" class="calendar-day has-workshop" data-date="2026-07-18" aria-pressed="false"
+                        aria-label="18 juli 2026, workshop De Meta Ray-Ban bril">
+                        18
+
+                    </button>
+                </li>
+                <li><span>19</span></li>
+                <li><span>20</span></li>
+                <li><span>21</span></li>
+                <li><span>22</span></li>
+                <li><span>23</span></li>
+                <li><span>24</span></li>
+                <li>
+                    <button type="button" class="calendar-day has-workshop" data-date="2026-07-25" aria-pressed="false"
+                        aria-label="25 juli 2026, workshop Zenmeditatie">
+                        25
+
+                    </button>
+                </li>
+                <li><span>26</span></li>
+                <li><span>27</span></li>
+                <li><span>28</span></li>
+                <li><span>29</span></li>
+                <li><span>30</span></li>
+                <li><span>31</span></li>
+
+
+            </ol>
+
+        </section>
+
+        <!--derde section  -->
+        <section class="workshops" aria-labelledby="workshops-title">
+            <h2 id="workshops-title">Workshop details</h2>
+
+
+            <article class="workshop-card" data-date="2026-07-18" hidden>
+                <time class="workshop-date" datetime="2026-07-18">
+                    <span class="date-day">18</span>
+                    <span class="date-month">juli</span>
+                    <span class="date-year">2026</span>
+                </time>
+                <div class="workshop-info">
+                    <h3>De Meta Ray-Ban bril</h3>
+                    <p>Een workshop over de mogelijkheden van de Meta Ray-Ban bril en hoe slimme technologie kan helpen
+                        in
+                        het dagelijks leven.
+
+                    </p>
+                    <p><strong>Status:</strong> Binnenkort</p>
+                    <ul class="workshop-details">
+                        <li><strong>Tijd:</strong> 13:00 - 15:00</li>
+                        <li><strong>Locatie:</strong> Videlio communityruimte</li>
+                        <li><strong>Voor wie:</strong> Leden en geïnteresseerden</li>
+                        <li><strong>Toegankelijkheid:</strong> Geschikt voor screenreadergebruikers en
+                            toetsenbordnavigatie.
+                        </li>
+                    </ul>
+                    <a class="workshop-cta" href="mailto:info@videlio.nl?subject=Aanmelden workshop De Meta Ray-Ban bril">Doe mee</a>
+                </div>
+
+            </article>
+            <article class="workshop-card" data-date="2026-07-25" hidden>
+                <time class="workshop-date" datetime="2026-07-25">
+                    <span class="date-day">25</span>
+                    <span class="date-month">juli</span>
+                    <span class="date-year">2026</span>
+                </time>
+
+                <div class="workshop-info">
+                    <h3>Zenmeditatie
+                    </h3>
+                    <p>Een rustige workshop gericht op ontspanning, aandacht en balans binnen de community.
+
+                    </p>
+                    <p><strong>Status:</strong> Binnenkort</p>
+                    <ul class="workshop-details">
+                        <li><strong>Tijd:</strong> 13:00 - 15:00</li>
+                        <li><strong>Locatie:</strong> Videlio communityruimte</li>
+                        <li><strong>Voor wie:</strong> Leden en geïnteresseerden</li>
+                        <li><strong>Toegankelijkheid:</strong> Geschikt voor screenreadergebruikers en
+                            toetsenbordnavigatie.
+                        </li>
+                    </ul>
+                    <a class="workshop-cta" href="mailto:info@videlio.nl?subject=Aanmelden workshop De Meta Ray-Ban bril">Doe mee</a>
+
+                </div>
+            </article>
+        </section>
+
+    </main>
+    <!-- <footer>2026</footer> -->
     <script src="js.js"></script>
 </body>
+
 </html>
